@@ -10,7 +10,6 @@ This is an exploration into secure encryption via RSA in C, this is mainly done 
 
 ## Requirements
 
-- math.h
 - gcc/clang for uint128
 
 ## Usage
