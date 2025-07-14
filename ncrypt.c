@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <time.h>
-#include <math.h> 
 #include <inttypes.h>
 #include <fcntl.h>
 #include <unistd.h>
@@ -101,7 +100,7 @@ uint64_t Gen32BitOddNum(){
         return -1;
     }
     
-    while(1){
+    while(true){
         if(read(fd,&num,sizeof(num)) != sizeof(num)){
             perror("read file failed");
             close(fd);
@@ -173,7 +172,7 @@ uint64_t ModInv(uint64_t a, uint64_t m) {
 }
 
 uint32_t Gen32bitPrime(){
-    while(1){
+    while(true){
         uint64_t num = Gen32BitOddNum();
         if(IsProbPrime(num,80)){
             
