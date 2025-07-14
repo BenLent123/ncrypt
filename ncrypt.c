@@ -6,7 +6,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdbool.h>
-
+//hehe :3
 typedef struct {
         uint64_t n;
         uint64_t e;
